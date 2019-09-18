@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="imagenes/General/favicon.png" sizes="32x32">
+    <title>CapitalismoWeb&trade; | Nuevo Producto</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src=""></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="inicio.html"> <img src="imagenes/General/Logo.svg" widht="32px" height="32px" alt=""> CapitalismoWeb&trade;</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Nuevo_Producto.html">Nuevo Producto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Presupuestos.html">Presupuestos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categoria.html">Categorias</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Desea buscar algo?" aria-label="Search">
+          <a href="ResultadoDeBusqueda.html" class="btn btn-primary">Buscar</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                buscar por
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item">
+                  <input type="radio" name="tipo_de_busqueda" value="nombre"> nombre
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  <input type="radio" name="tipo_de_busqueda" value="categoria"> descripción
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  <select class="custom-select" id="inputGroupSelect03" >
+                    <option selected>Categoria</option>
+                    <option value="1">Lo más visto</option>
+                    <option value="2">Lo más buscado</option>
+                    <option value="3">Lo más vendido</option>
+                    <option value="4">Lo mejor calificado</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                busqueda por fechas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item">
+                  desde <br>
+                  <input type="date" name="" value="">
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  hasta <br>
+                  <input type="date" name="" value="">
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-1 d-flex align-items-center">
+          <button type="button" name="button" class="btn btn-primary"><img class="card-img-top" src="imagenes/General/flecha_izq.png" alt=""></button>
+        </div>
+        <div class="col-6">
+          <br>
+          <input type="file" name="" value="">
+          <img src="" class="card-img-top" alt="">
+        </div>
+        <div class="col-1 d-flex align-items-center">
+          <button type="button" name="button" class="btn btn-primary"><img class="card-img-top" src="imagenes/General/flecha_der.png" alt=""></button>
+        </div>
+        <div class="col-4">
+          <br>
+          <input class="form-control" type="text" name="" value="" placeholder="Nombre del Articulo">
+          <br>
+          <img src="imagenes/General/estrella_dorada.png" alt="">
+          <img src="imagenes/General/estrella_dorada.png" alt="">
+          <img src="imagenes/General/estrella_dorada.png" alt="">
+          <img src="imagenes/General/estrella_dorada.png" alt="">
+          <img src="imagenes/General/estrella_dorada.png" alt="">
+          <textarea class="form-control" name="name" rows="8" cols="40" placeholder="Aqui va la descripcion"></textarea>
+          <input class="form-control" type="text" name="" value="" placeholder="Unidades disponibles"><br>
+          <select class="form-control" name="">
+            <option value="">categoria_1</option>
+            <option value="">categoria_2</option>
+            <option value="">categoria_3</option>
+          </select>
+          <button class="btn btn-primary btn-block" type="button" name="button">Añadir categoria</button>
+          <br>
+
+          <button type="button" name="button" class="btn btn-primary btn-block">Crear articulo</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

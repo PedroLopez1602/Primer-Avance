@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="imagenes/General/favicon.png" sizes="32x32">
+    <title>CapitalismoWeb&trade; | Presupuesto</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src=""></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"> <img src="imagenes/General/Logo.svg" widht="32px" height="32px" alt=""> CapitalismoWeb&trade;</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Usuario.html">Identificarse</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mi Cuenta
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Menu_info.html">Lista de deseados</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="Menu_Presupuestos.html">Presupuestos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="Menu_info.html">Carrito</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="Menu_info.html">Mis Compras</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="Menu_MisDatos.html">Mis Datos</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Menu_MisDatos.html"><img src="imagenes/General/example_profile_avatar.jpg" id="avatar" alt=""> <label>Mr. Reynolds</label> </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Desea buscar algo?" aria-label="Search">
+          <a href="ResultadoDeBusqueda.html" class="btn btn-primary">Buscar</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                buscar por
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item">
+                  <input type="radio" name="tipo_de_busqueda" value="nombre"> nombre
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  <input type="radio" name="tipo_de_busqueda" value="categoria"> descripción
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  <select class="custom-select" id="inputGroupSelect03" >
+                    <option selected>Categoria</option>
+                    <option value="1">Lo más visto</option>
+                    <option value="2">Lo más buscado</option>
+                    <option value="3">Lo más vendido</option>
+                    <option value="4">Lo mejor calificado</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                busqueda por fechas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item">
+                  desde <br>
+                  <input type="date" name="" value="">
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item">
+                  hasta <br>
+                  <input type="date" name="" value="">
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <br>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Articulo</h5>
+                    <a href="#" class="btn btn-primary">Link</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <br>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Articulo</h5>
+                    <a href="#" class="btn btn-primary">Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <br>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Articulo</h5>
+                    <a href="#" class="btn btn-primary">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <br>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6"></div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="col-12">
+                <br>
+                <textarea class="form-control" name="name" rows="8" cols="80" placeholder="Mensaje"></textarea>
+                <button class="btn btn-primary btn-block" type="button" name="btn_mensaje">Enviar</button><br>
+              </div>
+              <div class="col-6">
+                <input class="form-control" type="number" name="" value="" placeholder="Cuanto estas dispuesto a pagar?">
+              </div>
+              <div class="col-6">
+                <button class="btn btn-primary btn-block" type="button" name="button">Adelante!</button><br>
+              </div>
+              <div class="col-12">
+                <label>el precio actual es de: $</label><label>?</label>
+                <button class="btn btn-primary" type="button" name="button">¡Acepto!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
